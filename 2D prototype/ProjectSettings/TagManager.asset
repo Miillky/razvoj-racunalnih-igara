@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Vrata
+    uniqueID: 739431333
+    locked: 0
+  - name: Player
+    uniqueID: 3481270643
+    locked: 0
+  - name: Cvijet
+    uniqueID: 3974355019
+    locked: 0

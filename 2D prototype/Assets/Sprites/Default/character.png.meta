@@ -209,6 +209,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -240,9 +241,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -272,35 +276,6 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites:
-    - serializedVersion: 2
-      name: character_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 228
-        width: 15
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -5.5, y: 11}
-        - {x: -7.5, y: 6}
-        - {x: -7.5, y: -6}
-        - {x: -3.5, y: -9}
-        - {x: 3.5, y: -9}
-        - {x: 3.5, y: -6}
-        - {x: 6.5, y: -5}
-        - {x: 7.5, y: 7}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2561273429783c460800000000000000
-      internalID: 7260796086517896786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: character_1
       rect:
@@ -1557,6 +1532,44 @@ TextureImporter:
       bones: []
       spriteID: 8b14afa382d3eeeb0800000000000000
       internalID: -4688742919048642120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 228
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6.5, y: -2}
+        - {x: 6.5, y: 1}
+        - {x: 7.5, y: 4}
+        - {x: 7.5, y: 7}
+        - {x: 5.5, y: 10}
+        - {x: 3.5, y: 11}
+        - {x: -1.5, y: 11}
+        - {x: -4.5, y: 10}
+        - {x: -6.5, y: 9}
+        - {x: -7.5, y: 7}
+        - {x: -7.5, y: 1}
+        - {x: -7.5, y: -7}
+        - {x: -5.5, y: -8}
+        - {x: -3.5, y: -10}
+        - {x: 3.5, y: -10}
+        - {x: 5.5, y: -8}
+        - {x: 6.5, y: -6}
+      tessellationDetail: 1
+      bones: []
+      spriteID: f4060466010544360800000000000000
+      internalID: 7152930139536384079
       vertices: []
       indices: 
       edges: []
