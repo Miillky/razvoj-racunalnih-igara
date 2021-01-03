@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour {
     private void MovementHandler(){
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        Debug.Log("X: " + movement.x + " " + "Y: " + movement.y);
+        //Debug.Log("X: " + movement.x + " " + "Y: " + movement.y);
         movement.Normalize();
         rigidBody.velocity = movement * movementSpeed;
     }
@@ -49,6 +49,29 @@ public class PlayerController : MonoBehaviour {
             animator.SetInteger(animationState, (int)AnimStates.walk_down);
         } else {
             animator.SetInteger(animationState, (int)AnimStates.idle);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider) {
+        Debug.Log(collider.name);
+        Destroy(collider.gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collider) {
+        if(collider.gameObject.tag == "Door"){
+            Debug.Log(collider.gameObject.name + " OnCollisionEnter2D");
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collider) {
+        if(collider.gameObject.tag == "Door"){
+            Debug.Log(collider.gameObject.name + " OnCollisionStay2D");
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collider) {
+        if(collider.gameObject.tag == "Door"){
+            Debug.Log(collider.gameObject.name + " OnCollisionExit2D");
         }
     }
 }
