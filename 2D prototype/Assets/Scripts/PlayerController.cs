@@ -66,6 +66,7 @@ public class PlayerController : MonoBehaviour {
     private void OnCollisionStay2D(Collision2D collider) {
         if(collider.gameObject.tag == "Door"){
             Debug.Log(collider.gameObject.name + " OnCollisionStay2D");
+            GameManager.sharedInstance.LoadLevelOneHouse();
         }
     }
 
